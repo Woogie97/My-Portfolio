@@ -1,23 +1,502 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IH_01_차성욱</title>
+
+    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
     />
+    <!-- Bootstrap Icons (부트스트랩 공식 아이콘) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <div>I am WOOGIE</div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
+    <!-- 네비게이션 -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home"
+          ><!-- 가능한 로고 경로들 -->
+          <img src="oz-ci.png" alt="오즈코딩스쿨" id="oz-ci-logo" /> x 차성욱
+          풀스택 1인 창업가
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">소개</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">서비스</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">포트폴리오</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">연락처</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1>
+                <br />
+              </h1>
+              <p class="lead">
+                우리는 오즈 코딩 스쿨을 통해, 풀스택 개발부터 비즈니스 까지 모든
+                걸 배우게 될거에요.
+              </p>
+              <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-light-custom btn-custom"
+                  >포트폴리오 보기</a
+                >
+                <a href="#contact" class="btn btn-outline-custom btn-custom"
+                  >연락하기</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="text-center">
+              <i
+                class="bi bi-rocket-takeoff"
+                style="font-size: 15rem; color: rgba(255, 255, 255, 0.2)"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 소개 섹션 -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content text-center">
+              <p>
+                안녕하세요! 저는 오즈코딩스쿨 풀스택 1인 창업가 과정 1기를
+                수강중인 차성욱입니다.
+              </p>
+
+              <p>~~~~~~~~~~~~~~~~₩</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="stats">
+              <div class="row">
+                <div class="col-md-3 col-6">
+                  <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">완료된 프로젝트</div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-6">
+                  <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">만족한 고객</div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-6">
+                  <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">년 경험</div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-6">
+                  <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">고객 지원</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 서비스 섹션 -->
+    <section id="services" class="services section">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h3 class="service-title">풀스택 개발</h3>
+              <p class="service-description">
+                React, Node.js, MongoDB를 활용한 현대적인 웹 애플리케이션 개발.
+                반응형 디자인과 최적화된 성능을 보장합니다.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h3 class="service-title">모바일 앱 개발</h3>
+              <p class="service-description">
+                React Native를 사용한 크로스 플랫폼 모바일 앱 개발. iOS와
+                Android 동시 지원으로 개발 비용을 절약합니다.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <h3 class="service-title">비즈니스 컨설팅</h3>
+              <p class="service-description">
+                디지털 전환 전략 수립, 비즈니스 모델 개발, 시장 분석을 통한
+                종합적인 비즈니스 컨설팅 서비스.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <h3 class="service-title">SEO 최적화</h3>
+              <p class="service-description">
+                검색 엔진 최적화를 통한 온라인 가시성 향상. 구글 랭킹 상승과
+                자연 유입 트래픽 증가를 보장합니다.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="bi bi-shield-check"></i>
+              </div>
+              <h3 class="service-title">보안 솔루션</h3>
+              <p class="service-description">
+                웹 보안 진단, 데이터 암호화, 사이버 보안 컨설팅을 통한 안전한
+                디지털 환경 구축.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="service-card fade-in">
+              <div class="service-icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="service-title">팀 빌딩</h3>
+              <p class="service-description">
+                프로젝트 확장 시 필요한 개발자 팀 구성, 기술 스택 선정, 프로젝트
+                관리 시스템 구축.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 포트폴리오 섹션 -->
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-item fade-in">
+              <div class="portfolio-image">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">E-commerce Platform</h3>
+                <p class="portfolio-description">
+                  React + Node.js로 구축한 현대적인 이커머스 플랫폼. 결제
+                  시스템, 재고 관리, 고객 관리 기능을 포함.
+                </p>
+                <div class="portfolio-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Stripe</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-item fade-in">
+              <div class="portfolio-image">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Task Management App</h3>
+                <p class="portfolio-description">
+                  팀 협업을 위한 프로젝트 관리 앱. 실시간 알림, 간트 차트, 시간
+                  추적 기능 제공.
+                </p>
+                <div class="portfolio-tech">
+                  <span class="tech-tag">Vue.js</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">PWA</span>
+                  <span class="tech-tag">WebSocket</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-item fade-in">
+              <div class="portfolio-image">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Analytics Dashboard</h3>
+                <p class="portfolio-description">
+                  비즈니스 인텔리전스를 위한 데이터 분석 대시보드. 실시간 차트와
+                  리포트 기능 제공.
+                </p>
+                <div class="portfolio-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">D3.js</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">PostgreSQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="portfolio-item fade-in">
+              <div class="portfolio-image">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="portfolio-content">
+                <h3 class="portfolio-title">Online Learning Platform</h3>
+                <p class="portfolio-description">
+                  온라인 교육 플랫폼. 동영상 스트리밍, 퀴즈 시스템, 진도 추적
+                  기능을 포함.
+                </p>
+                <div class="portfolio-tech">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">AWS</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">FFmpeg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 연락처 섹션 -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title text-white">Contact Me</h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="bi bi-envelope"></i>
+              </div>
+              <h3 class="contact-title">이메일</h3>
+              <p class="contact-info">contact@kimstartup.com</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="bi bi-telephone"></i>
+              </div>
+              <h3 class="contact-title">전화번호</h3>
+              <p class="contact-info">+82 10-1234-5678</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="contact-card fade-in">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <h3 class="contact-title">위치</h3>
+              <p class="contact-info">서울특별시 강남구</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer class="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 KimStartup. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // 스크롤 애니메이션
+      function animateOnScroll() {
+        const elements = document.querySelectorAll(".fade-in");
+        elements.forEach((element) => {
+          const elementTop = element.getBoundingClientRect().top;
+          const elementVisible = 150;
+
+          if (elementTop < window.innerHeight - elementVisible) {
+            element.classList.add("visible");
+          }
+        });
+      }
+
+      // 네비게이션 배경 변경
+      function updateNavbar() {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.style.background = "rgba(255, 255, 255, 0.98)";
+          navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.15)";
+        } else {
+          navbar.style.background = "rgba(255, 255, 255, 0.95)";
+          navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)";
+        }
+      }
+
+      // 부드러운 스크롤 (네비게이션 클릭 시)
+      function smoothScroll() {
+        const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href");
+            const targetSection = document.querySelector(targetId);
+
+            if (targetSection) {
+              const offsetTop = targetSection.offsetTop - 70; // 네비바 높이 고려
+              window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      }
+
+      // 타이핑 효과 (선택사항)
+      function typeWriter(element, text, speed = 50) {
+        let i = 0;
+        element.innerHTML = "";
+        function typing() {
+          if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing, speed);
+          }
+        }
+        typing();
+      }
+
+      // 숫자 카운터 애니메이션
+      function animateCounters() {
+        const counters = document.querySelectorAll(".stat-number");
+        counters.forEach((counter) => {
+          const target = parseInt(counter.innerText.replace(/\D/g, ""));
+          const suffix = counter.innerText.replace(/[0-9]/g, "");
+          let current = 0;
+          const increment = target / 50;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              counter.innerText = target + suffix;
+              clearInterval(timer);
+            } else {
+              counter.innerText = Math.floor(current) + suffix;
+            }
+          }, 30);
+        });
+      }
+
+      // 스크롤 이벤트 리스너
+      window.addEventListener("scroll", () => {
+        animateOnScroll();
+        updateNavbar();
+      });
+
+      // 페이지 로드 시 실행
+      document.addEventListener("DOMContentLoaded", function () {
+        smoothScroll();
+
+        // 잠시 후 카운터 애니메이션 실행
+        setTimeout(() => {
+          const statsSection = document.querySelector(".stats");
+          const statsPosition = statsSection.getBoundingClientRect().top;
+          if (statsPosition < window.innerHeight) {
+            animateCounters();
+          }
+        }, 1000);
+      });
+
+      // 모바일 네비게이션 자동 닫기
+      document.addEventListener("click", function (e) {
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+        const navbarToggler = document.querySelector(".navbar-toggler");
+
+        if (
+          !navbarCollapse.contains(e.target) &&
+          !navbarToggler.contains(e.target)
+        ) {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false,
+          });
+          bsCollapse.hide();
+        }
+      });
+
+      // 포트폴리오 이미지 호버 효과 (선택사항)
+      document.querySelectorAll(".portfolio-item").forEach((item) => {
+        item.addEventListener("mouseenter", function () {
+          this.style.transform = "translateY(-10px) scale(1.02)";
+        });
+
+        item.addEventListener("mouseleave", function () {
+          this.style.transform = "translateY(0) scale(1)";
+        });
+      });
+    </script>
   </body>
 </html>
