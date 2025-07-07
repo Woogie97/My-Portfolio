@@ -164,3 +164,11 @@ body {
     padding-top: 70px;
   }
 }
+
+@media (max-width: 480px) {
+  #GreetingText {
+    white-space: normal !important;
+    word-break: keep-all;
+    line-height: 1.2;
+  }
+}
